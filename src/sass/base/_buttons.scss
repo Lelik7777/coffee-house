@@ -1,0 +1,12 @@
+.button {
+  cursor: pointer;
+  border-radius: 100px;
+  color: $color-text-dark;
+}
+
+.button__primary {
+  padding: 20px 78px;
+  background-color: $color-light;
+  text-decoration: none;
+  font-weight: 600;
+}
