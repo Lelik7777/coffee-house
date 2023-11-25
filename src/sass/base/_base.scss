@@ -6,6 +6,7 @@ html {
 
 body {
   @include font();
+  background-color: $color-light;
 }
 
 h1 {
