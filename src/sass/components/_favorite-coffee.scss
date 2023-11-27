@@ -1,0 +1,79 @@
+.favorite-coffee {
+  padding: 0 0 100px;
+}
+
+.favorite-coffee__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+.favorite-coffee__title {
+  text-align: center;
+
+  span {
+    font-style: italic;
+    color: $color-text-accent;
+  }
+}
+
+.favorite-coffee__slider {
+  width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider__container {
+  display: flex;
+  position: relative;
+  left: 0;
+}
+.card {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & img {
+    max-width: 480px;
+    max-height: 480px;
+  }
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.card__text {
+  text-align: center;
+}
+.card__price {
+  @include font(2.4rem, 3rem, 600);
+}
+.slider__button {
+  position: absolute;
+  top: calc(50% + 5px);
+  width: 60px;
+  height: 60px;
+}
+#button_left {
+  background-image: url(../assets/icons/button-icon-dark-left.svg);
+  left: 45px;
+}
+#button_right {
+  background-image: url(../assets/icons/button-icon-dark-right.svg);
+  right: 45px;
+}
+.slider__lines {
+  display: flex;
+  gap: 12px;
+}
+
+.slider__line {
+  width: 40px;
+  height: 4px;
+  background-color: $color-border-light;
+  &.active {
+    background-color: $color-border-dark;
+  }
+}
