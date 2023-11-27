@@ -25,6 +25,13 @@
     gap: 40px;
   }
 }
+
+.about__image {
+  @extend %transition;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
 .about__image1 {
   background:
     url("../assets/images/about/about-11.png"),

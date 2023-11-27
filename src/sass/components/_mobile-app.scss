@@ -4,6 +4,7 @@
 .mobile-app__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .mobile-app__content {
   display: flex;
