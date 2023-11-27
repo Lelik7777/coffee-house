@@ -1,0 +1,24 @@
+.mobile-app {
+  padding: 0 0 100px;
+}
+.mobile-app__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-app__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: center;
+  max-width: 630px;
+}
+.mobile-app__title {
+  & span {
+    font-style: italic;
+    color: $color-text-accent;
+  }
+}
+.mobile-app__buttons {
+  display: flex;
+  gap: 20px;
+}
