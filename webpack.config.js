@@ -25,6 +25,11 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "menu.html",
+      filename: "menu.html",
     }),
     new CleanWebpackPlugin(),
     // Add your plugins here
