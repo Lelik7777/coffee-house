@@ -28,9 +28,9 @@
 
 .about__image {
   @extend %transition;
-  &:hover {
-    transform: scale(0.9);
-  }
+  // &:hover {
+  //    transform: scale(0.9);
+  // }
 }
 .about__image1 {
   background:

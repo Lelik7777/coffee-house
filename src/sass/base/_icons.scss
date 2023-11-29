@@ -35,3 +35,30 @@
   display: inline-block;
   background-image: url(../assets/icons/clock.svg);
 }
+.coffee {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background-image: url(../assets/icons/icon-coffee-inact.svg);
+  &.active {
+    background-image: url("../assets/icons/icon-coffee-act.svg");
+  }
+}
+.tea {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background-image: url(../assets/icons/icon-tea-inact.svg);
+  &.active {
+    background-image: url("../assets/icons/icon-tea-act.svg");
+  }
+}
+.dessert {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background-image: url(../assets/icons/icon-dessert-inact.svg);
+  &.active {
+    background-image: url("../assets/icons/icon-dessert-act.svg");
+  }
+}

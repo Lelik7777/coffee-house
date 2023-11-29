@@ -11,6 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    hello from menu!
+    <div class="header menu__header">
+      <div class="wrapper wrapper__header">
+        <a href="index.html"><img src="./src/assets/icons/logo.svg" alt="logo" /></a>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="#favorite-coffee" class="navigation__link">Favorite coffee</a></li>
+            <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#mobile-app" class="navigation__link">Mobile app</a></li>
+            <li class="navigation__item"><a href="#contacts" class="navigation__link">Contact us</a></li>
+          </ul>
+        </nav>
+        <img class="header__menu active" src="./src/assets/icons/menu-item.svg" alt="menu" />
+      </div>
+    </div>
+    <section class="menu">
+      <div class="wrapper menu__wrapper">
+        <h2 class="menu__title">Behind each of our cups hides an <span>amazing surprise</span></h2>
+        <div class="menu__buttons">
+          <button class="button active"><span class="coffee active"></span>Coffee</button>
+          <button class="button"><span class="tea"></span>Tea</button>
+          <button class="button"><span class="dessert"></span>Dessert</button>
+        </div>
+        <div class="menu__cards"></div>
+      </div>
+    </section>
   </body>
 </html>
