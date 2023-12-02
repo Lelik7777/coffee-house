@@ -13,6 +13,8 @@
 
   @include media-tablet {
     padding: 20px 65px;
+    display: flex;
+    gap: 4px;
   }
 }
 
