@@ -1,6 +1,10 @@
 .navigation {
   display: flex;
   gap: 40px;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .navigation__link {
