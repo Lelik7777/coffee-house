@@ -10,6 +10,10 @@
   background-color: $color-light;
   text-decoration: none;
   font-weight: 600;
+
+  @include media-tablet {
+    padding: 20px 65px;
+  }
 }
 
 .button__app {

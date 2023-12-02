@@ -55,14 +55,26 @@
   top: calc(50% + 5px);
   width: 60px;
   height: 60px;
+
+  @include media-tablet {
+    top: calc(50% + 45px);
+  }
 }
 #button_left {
   background-image: url(../assets/icons/button-icon-dark-left.svg);
   left: 45px;
+
+  @include media-tablet {
+    left: 40px;
+  }
 }
 #button_right {
   background-image: url(../assets/icons/button-icon-dark-right.svg);
   right: 45px;
+
+  @include media-tablet {
+    right: 40px;
+  }
 }
 .slider__lines {
   display: flex;

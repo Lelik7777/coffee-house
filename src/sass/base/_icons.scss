@@ -62,3 +62,14 @@
     background-image: url("../assets/icons/icon-dessert-act.svg");
   }
 }
+
+.coffee-cup {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/icons/coffee-cup.svg");
+
+  @include media-tablet {
+    display: inline-block;
+  }
+}
