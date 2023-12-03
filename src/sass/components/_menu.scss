@@ -13,6 +13,10 @@
 .menu__title {
   max-width: 800px;
   text-align: center;
+
+  @include media-mobile {
+    @include font(3.2rem, 4rem, 600);
+  }
   & span {
     font-style: italic;
     color: $color-text-accent;
@@ -21,6 +25,10 @@
 .menu__buttons {
   display: flex;
   gap: 16px;
+
+  @include media-mobile {
+    gap: 8px;
+  }
 
   & .button {
     display: flex;
@@ -40,6 +48,7 @@
   display: flex;
   flex-flow: wrap;
   gap: 40px;
+  justify-content: center;
 
   @include media-tablet {
     justify-content: center;
@@ -91,16 +100,20 @@
 .card-6,
 .card-7,
 .card-8 {
-  @include media-tablet {
+  @include media(1400px) {
     display: none;
   }
 }
 .menu__refresh {
   width: 60px;
   height: 60px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
   border: 1px solid $color-border-dark;
+
+  @include media-tablet {
+    display: flex;
+  }
 }
