@@ -100,7 +100,7 @@
 .card-6,
 .card-7,
 .card-8 {
-  @include media(1400px) {
+  @include media($tablet-width) {
     display: none;
   }
 }
