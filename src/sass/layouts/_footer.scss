@@ -8,14 +8,21 @@
   padding: 100px;
   display: flex;
   gap: 100px;
-  & > div {
-    max-width: 530px;
-  }
 
   @include media-tablet {
     flex-direction: column;
     gap: 75px;
     padding: 100px 60px;
+  }
+
+  @include media-mobile {
+    padding: 60px 16px;
+    margin: 0 16px;
+    gap: 10px;
+  }
+
+  & > div {
+    max-width: 530px;
   }
 }
 .footer__content {
@@ -26,6 +33,10 @@
 .footer__title {
   color: $color-text-accent;
   font-style: italic;
+
+  @include media-mobile {
+    @include font(3.2rem, 4rem, 600);
+  }
   & span {
     color: $color-light;
     font-style: normal;

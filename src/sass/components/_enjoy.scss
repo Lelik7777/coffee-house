@@ -1,5 +1,11 @@
+$size: 500px;
+
 .enjoy {
-  padding: 0 0 100px;
+  padding: 0 40px 100px;
+
+  @include media($size) {
+    padding: 0 16px 100px;
+  }
 }
 .enjoy__wrapper {
   display: flex;
@@ -17,13 +23,24 @@
     max-width: 688px;
     padding: 100px 60px;
   }
+  @include media($size) {
+    padding: 60px 16px;
+  }
 }
 .enjoy__title,
 .enjoy__text {
   max-width: 530px;
+
+  @include media($size) {
+    max-width: 316px;
+  }
 }
 
 .enjoy__title {
+  @include media($size) {
+    @include font(4.2rem, 4.83rem, 600);
+  }
+
   span {
     font-style: italic;
     color: $color-text-accent;
