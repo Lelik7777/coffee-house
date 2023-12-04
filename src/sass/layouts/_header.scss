@@ -13,9 +13,53 @@
 }
 
 .header__menu {
+  @include font(1.6rem, 2.4rem, 600);
+
+  display: flex;
+  gap: 8px;
   align-self: center;
+  text-decoration: none;
+  color: $color-text-dark;
+  position: relative;
+  z-index: 10;
 
   @include media-tablet {
-    display: none;
+    position: fixed;
+    top: 600px;
+    left: 312px;
+    gap: 16px;
+    @include font(3.2rem, 4rem, 600);
+  }
+  & img {
+    @include media-tablet {
+      width: 40px;
+    }
+  }
+}
+.menu__line {
+  border-bottom: 2px solid $color-text-dark;
+
+  @include media-tablet {
+    border: none;
+  }
+}
+.header__navigation {
+  position: static;
+  z-index: 10;
+
+  @include media-tablet {
+    position: fixed;
+    top: 80px;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0 384px 0;
+    background-color: $color-light;
+    transition: all 0.5s;
+  }
+  &.active {
+    left: 0;
   }
 }

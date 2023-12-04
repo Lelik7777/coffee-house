@@ -3,12 +3,19 @@
   gap: 40px;
 
   @include media-tablet {
-    display: none;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
   }
 }
 
 .navigation__link {
-  text-decoration: none;
   @include font($weight: 600);
+
+  text-decoration: none;
   color: $color-text-dark;
+
+  @include media-tablet {
+    @include font(3.2rem, 4rem, 600);
+  }
 }

@@ -13,9 +13,14 @@
   @include media-tablet {
     display: flex;
   }
+  &.active {
+    gap: 0;
+  }
 }
 
 .burger__item {
+  @extend %transition;
+
   display: none;
   width: 16px;
   height: 1.5px;
@@ -23,5 +28,15 @@
 
   @include media-tablet {
     display: inline-block;
+  }
+}
+.burger__item1 {
+  &.active {
+    transform: rotate(45deg) translateY(1px);
+  }
+}
+.burger__item2 {
+  &.active {
+    transform: rotate(-45deg) translateY(-1.5px);
   }
 }
