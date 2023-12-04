@@ -11,6 +11,12 @@
   & > div {
     max-width: 530px;
   }
+
+  @include media-tablet {
+    flex-direction: column;
+    gap: 75px;
+    padding: 100px 60px;
+  }
 }
 .footer__content {
   display: flex;

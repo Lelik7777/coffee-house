@@ -12,6 +12,11 @@
   max-width: 1360px;
   height: 100%;
   padding: 100px;
+
+  @include media-tablet() {
+    max-width: 688px;
+    padding: 100px 60px;
+  }
 }
 .enjoy__title,
 .enjoy__text {

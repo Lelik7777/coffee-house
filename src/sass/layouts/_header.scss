@@ -14,4 +14,8 @@
 
 .header__menu {
   align-self: center;
+
+  @include media-tablet {
+    display: none;
+  }
 }
