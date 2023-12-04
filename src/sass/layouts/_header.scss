@@ -30,6 +30,9 @@
     gap: 16px;
     @include font(3.2rem, 4rem, 600);
   }
+  @include media-mobile {
+    left: 120px;
+  }
   & img {
     @include media-tablet {
       width: 40px;

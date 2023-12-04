@@ -7,6 +7,10 @@ html {
 body {
   @include font();
   background-color: $color-light;
+
+  &.active {
+    overflow: hidden;
+  }
 }
 
 h1 {
