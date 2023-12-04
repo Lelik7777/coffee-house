@@ -1,0 +1,26 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  @include font();
+  background-color: $color-light;
+}
+
+h1 {
+  @include font(7.2rem, 7.56rem, 600);
+  margin: 0;
+  color: $color-light;
+}
+
+h2 {
+  @include font(6rem, 7.5rem, 600);
+  margin: 0;
+}
+
+h3 {
+  @include font(2.4rem, 3rem, 600);
+  margin: 0;
+}

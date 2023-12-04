@@ -1,0 +1,83 @@
+.menu__header {
+  padding: 20px 0 15px;
+}
+.menu {
+  padding: 0 0 100px;
+}
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.menu__title {
+  max-width: 800px;
+  text-align: center;
+  & span {
+    font-style: italic;
+    color: $color-text-accent;
+  }
+}
+.menu__buttons {
+  display: flex;
+  gap: 16px;
+
+  & .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px 8px 8px;
+    border: 1px solid $color-border-light;
+    background-color: inherit;
+    &.active {
+      background-color: $color-border-dark;
+      color: $color-light;
+    }
+  }
+}
+.menu__cards {
+  display: flex;
+  flex-flow: wrap;
+  gap: 40px;
+}
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 1px solid $color-border-light;
+  border-radius: 40px;
+}
+.card__img {
+  width: 310px;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 40px;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 20px 12px 20px;
+}
+.card__info {
+  max-width: 270px;
+}
+.card__cost {
+  padding: 0 0 20px 20px;
+}

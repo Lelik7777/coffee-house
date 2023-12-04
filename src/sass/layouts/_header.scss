@@ -1,0 +1,21 @@
+.header {
+  padding: 20px 0;
+}
+.wrapper__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  background-image: url("../assets/icons/logo.svg");
+  width: 100px;
+  height: 60px;
+}
+
+.header__menu {
+  align-self: center;
+
+  @include media-tablet {
+    display: none;
+  }
+}

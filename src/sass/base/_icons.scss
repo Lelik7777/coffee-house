@@ -1,0 +1,75 @@
+.twitter {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../assets/icons/button-icon-light-twitter.svg);
+}
+.inst {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../assets/icons/button-icon-light-instag.svg);
+}
+.facebook {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../assets/icons/button-icon-light-facebook.svg);
+}
+
+.pin {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../assets/icons/pin-alt.svg);
+}
+.tel {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../assets/icons/phone.svg);
+}
+.clock {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../assets/icons/clock.svg);
+}
+.coffee {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background-image: url(../assets/icons/icon-coffee-inact.svg);
+  &.active {
+    background-image: url("../assets/icons/icon-coffee-act.svg");
+  }
+}
+.tea {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background-image: url(../assets/icons/icon-tea-inact.svg);
+  &.active {
+    background-image: url("../assets/icons/icon-tea-act.svg");
+  }
+}
+.dessert {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background-image: url(../assets/icons/icon-dessert-inact.svg);
+  &.active {
+    background-image: url("../assets/icons/icon-dessert-act.svg");
+  }
+}
+
+.coffee-cup {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/icons/coffee-cup.svg");
+
+  @include media-tablet {
+    display: inline-block;
+  }
+}

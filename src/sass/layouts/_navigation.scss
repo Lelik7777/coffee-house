@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  gap: 40px;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+  @include font($weight: 600);
+  color: $color-text-dark;
+}
