@@ -1,2 +1,6 @@
-import { products } from "./js/products";
-console.log(products);
+import { addBurgerMenuClickHandler, addNavItemClickHandler } from "./js/burger";
+
+window.addEventListener("load", () => {
+  addBurgerMenuClickHandler();
+  addNavItemClickHandler();
+});
