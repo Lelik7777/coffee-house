@@ -36,6 +36,7 @@ $size: 500px;
 .slider__container {
   display: flex;
   position: relative;
+  transition: all 1s;
   left: 0;
 }
 .card {
@@ -105,10 +106,17 @@ $size: 500px;
 }
 
 .slider__line {
+  display: block;
   width: 40px;
   height: 4px;
-  background-color: $color-border-light;
+  background: $color-border-light;
   &.active {
-    background-color: $color-border-dark;
+    background: $color-border-dark;
+  }
+  &[value] {
+    background-color: $color-border-light;
+    color: $color-border-dark;
+    //appearance: none;
+    border: none;
   }
 }
